@@ -1,0 +1,35 @@
+.app__section{
+    height: 100vh;
+}
+
+
+
+
+
+
+.nav__links li{
+    display: inline-block;
+    padding: 0px 40px;
+   
+
+}
+
+.navigationbar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 35.5px 160px 35px 160px;
+    
+    
+}
+
+.logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+
+li a button{
+    text-decoration: none;
+    color: white;
+}
+

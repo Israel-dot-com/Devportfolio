@@ -1,0 +1,25 @@
+.nav__links li {
+  display: inline-block;
+  padding: 0px 40px;
+}
+
+.navigationbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 160px 30px 160px;
+  background: rgba(4, 15, 31, 0.71);
+}
+
+.logo {
+  cursor: pointer;
+  margin-right: auto;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+}
