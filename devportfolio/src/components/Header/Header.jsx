@@ -1,62 +1,71 @@
 import React from "react";
 import "./Header.css";
-import { MdMenu } from "react-icons/md";
+import { MdMenu, MdOutlineClose } from "react-icons/md";
 import "../../assets/headerbg.jpg";
 import Jermtheory from "../../assets/Jermtheory.svg";
 const Header = () => {
-  const [togglemenu, settogglemenu] = useState(false)
+  const [togglemenu, settogglemenu] = React.useState(false);
   return (
-    <div className="app__bg app__section">
-      <div className="nav__padding">
+    <div className="app__bg">
         <div className="navigationbar">
-          <img src={Jermtheory} className="logo" alt="logo" />
-          <nav>
-            <ul className="nav__links">
-              <li>
-                <a id="Header" href="#Header">
-                  Home
-                </a>
-              </li>
-              <li>
-                <a id="Work" href="#Work">
-                  My work
-                </a>
-              </li>
-              <li>
-                <a id="About" href="About">
-                  About me
-                </a>
-              </li>
-            </ul>
-          </nav>
+          <div className="navigationbarlogo">
+            <img src={Jermtheory} className="logo" alt="logo" />
+          </div>
+          <ul className="nav__links">
+            <li>
+              <a className="p__font" href="#Header">
+                Home
+              </a>
+            </li>
+            <li>
+              <a className="p__font" href="#Work">
+                My work
+              </a>
+            </li>
+            <li>
+              <a className="p__font" href="About">
+                About me
+              </a>
+            </li>
+          </ul>
           <div className="navbar-smallscreen">
-          <MdMenu className="flex__center" fontSize={27} color="white" />
+            <MdMenu
+              className="flex__center"
+              fontSize={27}
+              color="white"
+              onClick={() => settogglemenu(true)}
+            />
+
+            {togglemenu && (
+              <div className="navbar-smallscreen_overlay flex__center slide-bottom">
+                <MdOutlineClose
+                  className="overlayclose"
+                  color="white"
+                  fontSize={27}
+                  onClick={() => settogglemenu(false)}
+                />
+                <ul className="navbar-smallscreen_links">
+                  <li>
+                    <a className="p__font" href="#Header">
+                      Home
+                    </a>
+                  </li>
+                  <li>
+                    <a className="p__font" href="#Work">
+                      My work
+                    </a>
+                  </li>
+                  <li>
+                    <a className="p__font" href="About">
+                      About me
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            )}
+          </div>
         </div>
-          {/* <a className='buttonlink' href='#navbar'><button className='custom__button'>Download my portfolio</button></a> */}
-        </div>
-        
-      </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      
 
       {/* Header Begin */}
 
