@@ -1,47 +1,64 @@
 .section__padding {
-    padding: 4rem 6rem;
-  }
-  
-  .flex__center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .app__bg {
-    background: url('./assets/headerbg.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: repeat;
-    height: 100vh;
-    
-  }
-  
-  .app__wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  
-    min-height: 100vh;
-  }
+  padding: 4rem 6rem;
+}
+
+.flex__center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__bg {
+  background: url("./assets/headerbg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  height: 100vh;
+}
+
+.work__bg {
+  background: url("./assets/workbg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  height: 100vh;
+}
+
+.app__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  min-height: 100vh;
+}
+
+.blue_button {
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  gap: 10px;
+
+  width: 160px;
+  height: 48px;
+
+  background: #ffffff;
+  border-radius: 99px;
+}
+
+.custom__button__clear {
+  padding: 8px;
+  gap: 10px;
+  border: 1px solid gray;
+  border-radius: 99px;
+  background: black;
+  color: gray;
+}
 
 
-  .blue_button{
-    justify-content: center;
-    align-items: center;
-    padding: 8px;
-    gap: 10px;
-    
-    width: 160px;
-    height: 48px;
-    
-    background: #FFFFFF;
-    border-radius: 99px;
-    
-
-  }
-
-  .clear_button{
-      
-
-  }
+.custom__button__white {
+  padding: 8px;
+  gap: 10px;
+  background: #ffffff;
+  border-radius: 99px;
+  color: blue;
+}

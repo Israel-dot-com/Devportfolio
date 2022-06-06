@@ -3,18 +3,25 @@
 .nav__links li {
   display: inline-block;
   padding: 0px 40px;
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: azure;
 }
 
 .navigationbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: rgba(4, 15, 31, 0.71);
+  padding: 1rem 2rem;
 }
 
 .navigationbarlogo {
   cursor: pointer;
   margin-right: auto;
-  
 }
 
 li a button {
@@ -22,24 +29,37 @@ li a button {
   color: white;
 }
 
-.navbar-smallscreen_links {
+.navbar-smallscreen_overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
   background-color: black;
-  transition: 0.5 ease;
+  transition: 0.7 ease;
   flex-direction: column;
   z-index: 5;
 }
 .navbar-smallscreen {
   display: none;
 }
+
+.navbar-smallscreen_links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .navbar-smallscreen_links .p__font {
   color: white;
 }
-.navbar-smallscreen_links .overlayclose {
+
+.navbar-smallscreen_links li {
+  padding: 30px;
+  font-size: larger;
+}
+
+.navbar-smallscreen_overlay .overlayclose {
   font-size: 27px;
   color: white;
   cursor: pointer;
@@ -52,9 +72,8 @@ li a button {
 /* Media Queries */
 
 @media screen and (max-width: 2000px) {
-  .navigationbarlogo {
-    
-    /* width: 150px; */
+  .navigationbarlogo img {
+    width: 250px;
   }
 }
 
@@ -66,15 +85,14 @@ li a button {
   .navbar-smallscreen {
     display: flex;
   }
-  .navigationbarlogo {
-    /* width: 200px; */
+  .navigationbarlogo img {
+    width: 170px;
   }
-
 }
 
 @media screen and (max-width: 650px) {
   .navigationbar {
-    
+    padding: 1rem;
   }
 
   .navbar-smallscreen {
@@ -88,3 +106,79 @@ li a button {
 
 /* Header */
 
+.headertitle h1,
+h5 {
+  color: whitesmoke;
+}
+
+.headertitle h1 {
+  font-family: "Segoe UI";
+  font-size: 72px;
+}
+
+.headertitle h5 {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height */
+
+  letter-spacing: 0.18em;
+
+  color: #ffffff;
+}
+
+.headertitle {
+  padding: 7rem 0rem 0rem 2rem;
+}
+
+.headercopy p {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: white;
+}
+
+.header_entirity {
+  display: flex;
+}
+
+.headercopy p {
+  margin: 2rem 0rem;
+}
+
+.header__content {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+}
+
+.headersectionpadding {
+
+}
+
+
+/* Header Media Queries */
+
+
+
+
+
+@media screen and (max-width: 2000px) {
+  .header__content{
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .header__content{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  
+}
